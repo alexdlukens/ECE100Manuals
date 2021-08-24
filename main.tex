@@ -1,19 +1,23 @@
 \documentclass[]{report}
 \usepackage{titlesec}
 \usepackage{lipsum}
+\usepackage{enumitem}
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true, %set true if you want colored links
-	linktoc=all,     %set to all if you want both sections and subsections linked
+	linktoc=section,     %set to all if you want both sections and subsections linked
 	linkcolor=black,  %choose some color if you want links to stand out
 }
+%reduce spacing above chapter title
+\titlespacing*{\chapter}{0pt}{-50pt}{10pt}
 
 \titleformat{\chapter}[display]
 {\normalfont\bfseries}{}{0pt}{\Large}
 
 % Title Page
 \title{ECE 100 Laboratory Manuals}
-\author{Illinois Institute of Technology ECE Dept}
+\author{Illinois Institute of Technology ECE Department}
+\date{Last Modified: \today}
 
 
 \begin{document}
@@ -21,10 +25,24 @@
 \tableofcontents
 
 
-\include{TeX_files/reading01.tex}
-\include{TeX_files/prelab01.tex}
-\include{TeX_files/lab01.tex}
-\include{TeX_files/prelab02.tex}
-\include{TeX_files/lab02.tex}
+\input{TeX_files/reading01.tex}
+\input{TeX_files/prelab01.tex}
+\input{TeX_files/lab01.tex}
+\input{TeX_files/prelab02.tex}
+\input{TeX_files/lab02.tex}
+\input{TeX_files/prelab03.tex}
+\input{TeX_files/lab03.tex}
+\input{TeX_files/prelab04.tex}
+\input{TeX_files/lab04.tex}
+\input{TeX_files/prelab05.tex}
+\input{TeX_files/lab05.tex}
+\input{TeX_files/prelab06.tex}
+\input{TeX_files/lab06.tex}
+\input{TeX_files/prelab07.tex}
+\input{TeX_files/lab07.tex}
+\input{TeX_files/prelab08.tex}
+\input{TeX_files/lab08.tex}
+\input{TeX_files/prelab09.tex}
+\input{TeX_files/lab09.tex}
 
 \end{document}          
