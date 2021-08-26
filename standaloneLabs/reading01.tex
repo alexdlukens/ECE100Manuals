@@ -1,0 +1,40 @@
+\documentclass[]{report}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{{CompetitionRules/}{TeX_files/}}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=section,     %set to all if you want both sections and subsections linked
+	linkcolor=black,  %choose some color if you want links to stand out
+}
+%reduce spacing above chapter title
+\titlespacing*{\chapter}{0pt}{-50pt}{10pt}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\Large}
+
+\begin{document}
+	
+\section{Preface}
+
+\paragraph{Welcome to the ECE 100 - Intro to Profession - Laboratory Section}{
+In this laboratory, students will utilize Arduinos, sensors, code, and other items to build an assortment of robots. Students will collaborate in groups and participate in a variety of competetions between groups from all lab sections}
+
+\paragraph{Academic Honesty}{
+All students must follow the IIT Code of Academic Honesty during this laboratory session. Full text for the Code of Academic Honesty can be found on \href{https://www.iit.edu/student-affairs/student-handbook/fine-print/code-academic-honesty}{IIT's website}}
+
+\paragraph{Reference Material}{
+There are several good reference sites for coding with Arduino and Arduino Sensors. The Arduino IDE uses the C++ coding language, so any reference material for C or C++ is also applicable
+\begin{itemize}
+	\item \href{https://www.arduino.cc/reference/en/}{Arduino Official Language Reference}
+	\item \href{https://www.arduino.cc/en/tutorial/sketch}{Arduino Tutorial Sketch}
+	\item \href{https://www.tutorialspoint.com/arduino/index.htm}{Tutorialspoint.com Arduino Tutorials}
+\end{itemize}
+}
+
+\paragraph{Reports Format}{ Templates for Prelab and Postlab reports can be found on Blackboard. Reports may be written using \href{https://www.latex-project.org/}{LaTeX} or a text processor such as Microsoft Word, Google Docs, etc.
+}
+
+\end{document}

@@ -1,6 +1,26 @@
+\documentclass[]{report}
+\usepackage{titlesec}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{{CompetitionRules/}{TeX_files/}}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=section,     %set to all if you want both sections and subsections linked
+	linkcolor=black,  %choose some color if you want links to stand out
+}
+%reduce spacing above chapter title
+\titlespacing*{\chapter}{0pt}{-50pt}{10pt}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\Large}
+
+\begin{document}
+
 \chapter{Laboratory Session 7}
 \section{Pre-Laboratory Report}
-	Complete this report before coming to the Laboratory Session
+Complete this report before coming to the Laboratory Session
 \begin{itemize}
 	\item[\textbf{Due Date}]{Week of September 6th-September 10th, \the\year \space in lab section. Submit report electronically before start of Lab via Blackboard (check assignments folder)}
 	\item[\textbf{Format}]{Follow the Pre-Laboratory Report Template found on Blackboard}
@@ -23,7 +43,7 @@
 			\item What Arduino functions are utilized to control the servo?  
 		\end{enumerate}	
 	}
-
+	
 	\item[\textbf{Additional Task}]{Create flowcharts for the code you plan to generate in Laboratory 4
 		\begin{enumerate}[label=\alph*.]
 			\item Make 1 flowchart for the sample code that you have been provided in the Research \& Investigation section 
@@ -34,3 +54,26 @@
 		\end{enumerate}	
 	}
 \end{itemize}
+
+\section{Post-Laboratory Report}
+
+\begin{itemize}
+	\item[\textbf{Due Date}]{Week of September 6th-September 10th, \the\year \space in lab section. Submit report electronically before start of Lab via Blackboard (check assignments folder)}
+	\item[\textbf{Format}]{Follow the Post-Laboratory Report Template found on Blackboard}
+	\item[\textbf{Content}]{Sections to be included in the Pre-Laboratory Report include
+		\begin{enumerate}
+			\item \textbf{Header}
+			\item \textbf{Problem Statement}
+			\item \textbf{Research \& Investigation}
+			\item \textbf{Alternative Solutions}
+			\item \textbf{Optimum Solution}
+			\item \textbf{Analysis \& Testing}
+			\item \textbf{Final Evaluation}
+			\item \textbf{Sources/Works Cited}
+			\item \textbf{Code Attachments (as needed)}
+		\end{enumerate}
+		
+	}
+\end{itemize}
+
+\end{document}

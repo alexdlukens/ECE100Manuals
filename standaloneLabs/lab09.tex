@@ -1,4 +1,23 @@
-\chapter{Laboratory Session 7}
+\documentclass[]{report}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{{CompetitionRules/}{TeX_files/}}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=section,     %set to all if you want both sections and subsections linked
+	linkcolor=black,  %choose some color if you want links to stand out
+}
+%reduce spacing above chapter title
+\titlespacing*{\chapter}{0pt}{-50pt}{10pt}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\Large}
+
+\begin{document}
+
+\chapter{Laboratory Session 9}
 \section{Pre-Laboratory Report}
 Complete this report before coming to the Laboratory Session
 \begin{itemize}
@@ -16,23 +35,7 @@ Complete this report before coming to the Laboratory Session
 		\end{enumerate}
 		
 	}
-	
-	\item[\textbf{Additional Task}]{Answer the following questions and include them in the Pre-Laboratory Report
-		\begin{enumerate}[label=\alph*.]
-			\item What are servos and how do they work?
-			\item What Arduino functions are utilized to control the servo?  
-		\end{enumerate}	
-	}
-	
-	\item[\textbf{Additional Task}]{Create flowcharts for the code you plan to generate in Laboratory 4
-		\begin{enumerate}[label=\alph*.]
-			\item Make 1 flowchart for the sample code that you have been provided in the Research \& Investigation section 
-			\item Make 1 flowchart for your Optimal Solution
-			\item You can use PowerPoint, or any other software, to create your flowcharts
-			\item Your flowcharts should use simple English, not IC syntax
-			\item Include the flowchart in the Optimum Solution section of your Pre-Lab report
-		\end{enumerate}	
-	}
+	\item[\textbf{Additional Task}]{Bring Robot Kit to your lab section}
 \end{itemize}
 
 \section{Post-Laboratory Report}
@@ -55,3 +58,5 @@ Complete this report before coming to the Laboratory Session
 		
 	}
 \end{itemize}
+
+\end{document}
